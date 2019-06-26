@@ -3,6 +3,7 @@ class CreateAppointments < ActiveRecord::Migration[5.0]
     create_table :appointments do |t|
       t.belongs_to :patient
       t.belongs_to :doctor
+      t.datetime :appointment_datetime
       t.timestamps
     end
   end
